@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = false
+name = "pip_conf_index_global"
+
+[packages]
+asgiref = "==3.8.1"
+django = "==4.2.16"
+django-cors-headers = "==4.6.0"
+djangorestframework = "==3.15.2"
+sqlparse = "==0.5.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
