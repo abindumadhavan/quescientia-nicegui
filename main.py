@@ -3,6 +3,7 @@ from python_intro import python_intro_controller
 from maths_easy import maths_chap1
 from physics_fun import physics_chap1
 from play_games import games_controller
+from periodic_table import periodic_table_controller
 
 @ui.page('/')
 def main_page():
@@ -14,6 +15,7 @@ def main_page():
                 ui.menu_item('Introduction to Python', lambda: ui.navigate.to('/python-intro'))
                 ui.menu_item('Maths made easy', lambda: ui.navigate.to('/maths-easy')   )
                 ui.menu_item('Fun with Physics', lambda: ui.navigate.to('/physics-fun'))
+                ui.menu_item('The Periodic Table', lambda: ui.navigate.to('/periodic-table'))
 
         with ui.button('Analyze').classes('text-black hover:bg-green-100'):
             with ui.menu() as menu2:
@@ -38,6 +40,10 @@ def maths_easy_subpage():
 @ui.page('/physics-fun',title='Fun with Physics')
 def physics_fun_subpage():
     physics_chap1.show()
+
+@ui.page('/periodic-table',title='The Periodic Table')
+def periodic_table_subpage():
+    periodic_table_controller.show()
 
 @ui.page('/play-games',title='Relax and Play')
 def play_games_subpage():
